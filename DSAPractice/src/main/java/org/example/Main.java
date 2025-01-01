@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         int[] numbers = {10, 21, 5, 1, 14, 12, 60, 80, 100, 30, 45, 50};
 
-        SortingAlgorithms.bubbleSort(numbers);
+        SortingAlgorithms.selectionSort(numbers);
 
         System.out.println(Arrays.toString(numbers));
     }

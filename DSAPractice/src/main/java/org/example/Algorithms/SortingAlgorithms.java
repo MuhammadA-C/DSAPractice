@@ -29,6 +29,34 @@ public class SortingAlgorithms {
             }
             unsortedUntilIndex--; // DDecreases the size of the array because the elements are sorted in the correct position
         }
+    }
 
+    /**
+     * Selection Sort:
+     *
+     *
+     * Big O: O(N^2)
+     * Note: Although Selection Sort and Bubble Sort are both O(N^2) Selection Sort is faster
+     *
+     * @param numbers array of integers
+     */
+    public static void selectionSort(int[] numbers) {
+        for (int i = 0; i < numbers.length - 1; i++) {
+            int lowestIndexValue = i; // Holds reference to the index for lowest element value
+
+            for (int j = i + 1; j < numbers.length; j++) {
+                // Swaps the index if a new lowest element is found
+                if (numbers[lowestIndexValue] > numbers[j]) {
+                    lowestIndexValue = j;
+                }
+            }
+
+            // Swaps the position for the lowest index element found and the current loop iteration element
+            if (lowestIndexValue != i) {
+                int temp = numbers[i];
+                numbers[i] = numbers[lowestIndexValue];
+                numbers[lowestIndexValue] = temp;
+            }
+        }
     }
 }
