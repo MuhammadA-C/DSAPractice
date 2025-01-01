@@ -1,11 +1,16 @@
 package org.example;
 
 import org.example.Algorithms.SearchingAlgorithms;
+import org.example.Algorithms.SortingAlgorithms;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] numbers = {1, 2, 4, 5, 6, 10, 20, 24, 25, 30, 40, 45, 60};
+        int[] numbers = {10, 21, 5, 1, 14, 12, 60, 80, 100, 30, 45, 50};
 
-        System.out.println(SearchingAlgorithms.binarySearch(numbers, 66));
+        SortingAlgorithms.bubbleSort(numbers);
+
+        System.out.println(Arrays.toString(numbers));
     }
 }
