@@ -27,7 +27,7 @@ public class SortingAlgorithms {
                     sorted = false;
                 }
             }
-            unsortedUntilIndex--; // DDecreases the size of the array because the elements are sorted in the correct position
+            unsortedUntilIndex--; // Decreases the size of the array because the elements are sorted in the correct position
         }
     }
 
