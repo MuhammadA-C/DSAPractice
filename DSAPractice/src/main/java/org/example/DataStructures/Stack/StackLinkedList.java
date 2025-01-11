@@ -57,6 +57,14 @@ public class StackLinkedList {
         }
         return this.head.value;
     }
+
+    /**
+     * Delete entire stack.
+     */
+    public void deleteEntireStack() {
+        this.head = null;
+        this.size = 0;
+    }
     
     /**
      * Outputs items in the stack (e.g. [10 -> 20 -> 30]).
