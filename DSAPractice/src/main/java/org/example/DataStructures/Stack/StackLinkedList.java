@@ -37,7 +37,7 @@ public class StackLinkedList {
      * @return removed item
      */
     public int pop() {
-        if (this.head == null || this.size == 0) {
+        if (this.head == null) {
             throw  new IllegalStateException();
         }
 
@@ -52,7 +52,7 @@ public class StackLinkedList {
      * @return last item
      */
     public int peek() {
-        if (this.head == null || this.size == 0) {
+        if (this.head == null) {
             throw  new IllegalStateException();
         }
         return this.head.value;
