@@ -21,13 +21,9 @@ public class StackLinkedList {
      * @param value item to add to stack
      */
     public void push(final int value) {
-        if (this.head == null) {
-            throw new IllegalStateException();
-        }
-
         Node insertNode = new Node();
         insertNode.value = value;
-        insertNode.next = this.head;
+        insertNode.next = this.head == null ? null : this.head;
         this.head = insertNode;
         this.size++;
     }
