@@ -53,7 +53,7 @@ public class StackLinkedList {
      */
     public int peek() {
         if (this.head == null) {
-            throw  new IllegalStateException();
+            return -1;
         }
         return this.head.value;
     }
