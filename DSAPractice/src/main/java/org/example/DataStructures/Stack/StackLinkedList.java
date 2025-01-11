@@ -38,7 +38,7 @@ public class StackLinkedList {
      */
     public int pop() {
         if (this.head == null) {
-            throw  new IllegalStateException();
+            return -1;
         }
 
         int temp = this.head.value;
